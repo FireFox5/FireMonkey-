@@ -1,0 +1,6 @@
+Number1=float(input("введите первое число"))
+Number2=float(input("введите второе число"))
+print(Number1,'+',Number2,'=',Number1+Number2)
+print(Number1,"-",Number2,"=",Number1-Number2)
+print(Number1,'*',Number2,'=',Number1*Number2)
+print(Number1,'/',Number2,"=",Number1/Number2)

@@ -1,0 +1,12 @@
+name="abc"
+name2=input()
+age=input()+20
+age2=99.2
+print(name2)
+print(type(name2))
+print(name2)
+print(age)
+#print(type(age2))
+#print(type(age))
+#print(type(name))
+#print(type(name2))

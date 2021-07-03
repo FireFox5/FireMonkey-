@@ -1,0 +1,6 @@
+name= input()
+surname=input()
+print("i a'm 15")
+print(name)
+print(surname)
+print( input())
