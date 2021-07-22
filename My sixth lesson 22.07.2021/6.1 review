@@ -1,0 +1,12 @@
+dictionary ={
+    'word ':'слова',
+    'fire': 'ogon'
+
+
+
+
+}
+print(dictionary ['fire'])
+print(dictionary.keys())
+print(dictionary.values())
+print(dictionary.get('fire'))
