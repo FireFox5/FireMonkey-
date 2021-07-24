@@ -5,9 +5,9 @@ def a_plus_b (a,b,c):
     print(a+b*c)
 
 
-a_plus_b(2,2,2)
-a_plus_b(4,4,4)
-a_plus_b(8,8,8)
+#a_plus_b(2,2,2)
+#a_plus_b(4,4,4)
+#a_plus_b(8,8,8)
 
 def pojalet_temirlan ():
     num1 = random.randint(1,10)
