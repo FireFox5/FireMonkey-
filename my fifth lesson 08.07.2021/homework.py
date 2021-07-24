@@ -1,18 +1,39 @@
-from translate import Translator
+def start():
+    print('choose one of the options: ')
+    print('1 – Add new word')
+    print('2 – Translate word')
+    print('3 – Change the meaning of the word')
+    print('4 – Delete word')
+    print('5 - Show how many words')
+    print('0 – Exit')
+    return
 
-translator = Translator(from_lang='Russian', to_lang='English')
-result = translator.translate('false')
-print(result)
 
-
-import requests
-import json
-
-print("Введите слово!")
-text = input("Enter: ")
-url = 'https://translate.yandex.net/api/v1.5/tr.json/translate?'
-key = 'trnsl.1.1.20190227T075339Z.1b02a9ab6d4a47cc.f37d50831b51374ee600fd6aa0259419fd7ecd97'
-lang = 'en-ru', 'ru-en'
-r = requests.post(url, data={'key': key, 'text': text, 'lang': lang})
-# Выводим результат
-print(json.loads(r.text)['text'][0])
+dictionary = dict()
+while True:
+    start()
+    n = int(input('choose one of the options: '))
+    if n == 1:
+        word = input('put the word: \n')
+        tran = input('put the  translation of the word: \n')
+        dictionary[word] = tran
+    elif n == 2:
+        word = input('put word: \n')
+        if word in dictionary:
+            print(word, '->', dictionary[word])
+        else:
+            print('No words in dictionary like that ')
+    elif n == 3:
+        word = input('put the word that need to change: \n')
+        tran = input('put the translation: \n')
+        dictionary[word] = tran
+    elif n == 4:
+        word = input('put the word that need to change: \n')
+        if word in dictionary:
+            dictionary.pop(word)
+        else:
+            print('No words in dictionary like that')
+    elif n == 5:
+        print(*dictionary.keys(), sep='\n')
+    else:
+        break
