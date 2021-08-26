@@ -1,0 +1,1 @@
+print(input("name"),input("surname"),input("credit card"),input ("age"))

@@ -1,0 +1,7 @@
+print("that programm will take your number and will work on them like calculator but 1 time ")
+first_number=int(input("put the first number "))
+second_number=int(input("put the second number"))
+print(first_number,"+",second_number,'=',first_number+second_number )
+print(first_number,"-",second_number,"=",first_number-second_number)
+print(first_number,'*',second_number,'=',first_number*second_number)
+print(first_number,'/',second_number,'=',first_number/second_number)
