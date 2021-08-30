@@ -1,13 +1,29 @@
-def plus(a,b):
-  return a+b
+from certifi.__main__ import args
 
-def minus(a,b,*args):
-    return a-b,args
 
-def multiply(a,b,*args):
-    return a*b*args
-def divide(a,b,*args):
-    return a/b/args
+class calculator:
+    # x = int(input("введите дополнительное число"))
+    def plus(self,a,b,*args):
+        z=int(input("put number"))
+        for num in args :
+            z+=num
+        print(a,"+",b,'+',z,"=",a+b+z)
+    def minus(self,a,b, *args):
+        z=int(input("put number"))
+        for num in args :
+            z-=num
+        print(a, "-", b,'-',z ,"=", a - b-z)
+    def multiply(self,a,b,*args):
+        z=int(input("put number"))
+        for num in args :
+            z*=num
+        print(a, "*", b,'*',z,"=", a * b*z)
+    def divide(self,a,b,*args):
+        z=int(input("put number"))
+        for num in args :
+            z/=num
+        print(a, "/", b,'/',z, "=", a / b/z)
+
 
 
 
